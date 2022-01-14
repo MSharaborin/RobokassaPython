@@ -4,11 +4,11 @@
     python -m pip install -r requirements.txt
 
 ### Module App:
-####setting.py: 
+#### setting.py: 
 Contains response data, a link to the Robocassa. 
 Test payment mode False disable, True enable.
 
-####utils:
+#### utils:
 
 `def calculate_signature(*args)`: Methods for creating MD5 signatures. 
 
@@ -17,7 +17,7 @@ Test payment mode False disable, True enable.
 `def check_signature_result(request: str)`: Accepts the parsed data and signature, 
 then compares and returns a Boolean value.
 
-####view:
+#### view:
 Сontains the Robokassa class with methods:
 
 `def formation_payment_link()`: URL for redirection of the customer to the service.
@@ -28,7 +28,7 @@ then compares and returns a Boolean value.
 
 
 ### Module model
-####scheme:
+#### scheme:
 
     @dataclass
     class Merchant:
