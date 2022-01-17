@@ -7,7 +7,7 @@ from loguru import logger
 def calculate_signature(*args) -> str:
 	"""Create signature MD5.
 	"""
-	return hashlib.md5(':'.join(str(i) for i in args).encode()).hexdigest()
+	return hashlib.md5(':'.join(str(arg) for arg in args).encode()).hexdigest()
 
 
 def parse_response(request: str) -> dict:

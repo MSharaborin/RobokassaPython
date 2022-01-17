@@ -4,9 +4,6 @@
     python -m pip install -r requirements.txt
 
 ### Module App:
-#### setting.py: 
-Contains response data, a link to the Robocassa. 
-Test payment mode False disable, True enable.
 
 #### utils:
 
@@ -20,9 +17,9 @@ then compares and returns a Boolean value.
 #### view:
 Сontains the Robokassa class with methods:
 
-`def formation_payment_link()`: URL for redirection of the customer to the service.
+`def generate_payment_link()`: URL for redirection of the customer to the service.
 
-`def get_result_order()`: Verification of notification (ResultURL).
+`def result_payment()`: Verification of notification (ResultURL).
 
 `def check_success_payment()`: Verification of operation parameters ("cashier check") in SuccessURL script.
 
